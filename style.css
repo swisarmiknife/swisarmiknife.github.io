@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: #f7f6f3;
+  color: #2b2b2b;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 40px;
+}
+
+.name {
+  font-size: 20px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-size: 14px;
+}
+
+nav a:hover {
+  opacity: 0.6;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 40px;
+  padding: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  cursor: pointer;
+}
+
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(247, 246, 243, 0.95);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.about {
+  max-width: 640px;
+  padding: 80px 40px;
+  line-height: 1.7;
+}
+
+.contact {
+  margin-top: 40px;
+}
+
+.contact a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #2b2b2b;
+}
+
+.contact a:hover {
+  opacity: 0.6;
+}
